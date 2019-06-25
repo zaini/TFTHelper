@@ -2,9 +2,14 @@ import eel
 import io
 
 #ownedItems = ["bf_sword.png", "needlessly.png", "recurve_bow.png"]
-ownedItems = [0, 1, 2]
+#ownedItems = [0, 1, 2]
 
 itemDictionary = {"bf_sword.png" : 0, "needlessly.png" : 1, "recurve_bow.png" : 2, "tear.png" : 3, "chain_vest.png" : 4, "negatron_cloak.png" : 5, "giants_belt.png" : 6, "golden_spatula.png" : 7}
+
+reverseItemDictionary = {v: k for k, v in itemDictionary.items()}
+
+#print(itemDictionary, reverseItemDictionary)
+
 
 """
 cheatsheet = [['bf_sword.png', 'needlessly.png', 'recurve_bow.png', 'tear.png', 'chain_vest.png', 'negatron_cloak.png', 'giants_belt.png', 'golden_spatula.png'],
@@ -35,25 +40,31 @@ eel.init('web')
 def resetSelections():
     global possibleItems
     global ownedItems
+    global ownedItemsNumbers
     
     ownedItems = []
-
+    ownedItemsNumbers = []
     possibleItems = []
-    
+
 resetSelections()
 
 @eel.expose
 def addItem(item):
-    if item in itemDictionary:
-        ownedItems.append(itemDictionary[item])
+    ownedItems.append(item)
     return ownedItems
 
 @eel.expose
 def resultantItems(ownedItems):
-    for a in ownedItems:
-        for b in ownedItems:
+    for ownedItem in ownedItems:
+        if ownedItem in itemDictionary:
+            ownedItemsNumbers.append(itemDictionary[ownedItem])
+
+    for a in ownedItemsNumbers:
+        for b in ownedItemsNumbers:
             if cheatsheet[a][b] not in possibleItems:
                 possibleItems.append(cheatsheet[a][b])
+
+    print(possibleItems)
     return possibleItems
 
 eel.start('index.html', size=(1280, 720))
