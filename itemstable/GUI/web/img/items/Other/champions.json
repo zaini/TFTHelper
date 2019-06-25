@@ -1,0 +1,1450 @@
+[{
+    "name": "Aatrox",
+    "id": "aatrox",
+    "origin": ["demon"],
+    "class": ["blademaster"],
+    "stats": {
+        "cost": 3,
+        "health": [600, 1080, 2160],
+        "armor": 25,
+        "mr": 20,
+        "ad": 65,
+        "as": 0.65,
+        "range": 180
+    },
+    "ability": {
+        "name": "The Darkin Blade",
+        "passive": false,
+        "text": "Aatrox cleaves the area in front of him, dealing damage to enemies inside it.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [300, 500, 700]
+        }]
+    }
+}, {
+    "name": "Ahri",
+    "id": "ahri",
+    "origin": ["wild"],
+    "class": ["sorcerer"],
+    "stats": {
+        "cost": 2,
+        "health": [450, 810, 1620],
+        "armor": 20,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.55,
+        "range": 660
+    },
+    "ability": {
+        "name": "Orb of Deception",
+        "passive": false,
+        "text": "Ahri fires an orb in a line that returns to her, damaging enemies it passes through.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [100, 175, 250]
+        }]
+    }
+}, {
+    "name": "Akali",
+    "id": "akali",
+    "origin": ["ninja"],
+    "class": ["assassin"],
+    "stats": {
+        "cost": 4,
+        "health": [700, 1260, 2520],
+        "armor": 20,
+        "mr": 20,
+        "ad": 70,
+        "as": 0.7,
+        "range": 180
+    },
+    "ability": {
+        "name": "Five Point Strike",
+        "passive": false,
+        "text": "Akali throws shurikens in front of her, dealing damage.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [150, 325, 500]
+        }]
+    }
+}, {
+    "name": "Anivia",
+    "id": "anivia",
+    "origin": ["glacial"],
+    "class": ["elementalist"],
+    "stats": {
+        "cost": 5,
+        "health": [650, 1170, 2340],
+        "armor": 20,
+        "mr": 20,
+        "ad": 40,
+        "as": 0.6,
+        "range": 890
+    },
+    "ability": {
+        "name": "Glacial Storm",
+        "passive": false,
+        "text": "Anivia channels a large hailstorm, damaging and slowing the attack speed of enemies inside of it.",
+        "stats": [{
+            "name": "Total Damage",
+            "ranks": [700, 950, 1200]
+        }, {
+            "name": "Attack Speed Slow",
+            "ranks": [50, 70, 90]
+        }, {
+            "name": "Storm Duration",
+            "value": [8]
+        }]
+    }
+}, {
+    "name": "Ashe",
+    "id": "ashe",
+    "origin": ["glacial"],
+    "class": ["ranger"],
+    "stats": {
+        "cost": 3,
+        "health": [550, 990, 1980],
+        "armor": 20,
+        "mr": 20,
+        "ad": 60,
+        "as": 0.7,
+        "range": 960
+    },
+    "ability": {
+        "name": "Enchanted Crystal Arrow",
+        "passive": false,
+        "text": "Ashe fires an arrow that stuns and damages the farthest enemy. The stun is longer the farther the enemy.",
+        "stats": [{
+                "name": "Damage",
+                "ranks": [200, 400, 600]
+            },
+            {
+                "name": "Stun Duration per Square",
+                "ranks": [1, 1.5, 2]
+            }
+        ]
+    }
+}, {
+    "name": "Aurelion Sol",
+    "id": "aurelionsol",
+    "origin": ["dragon"],
+    "class": ["sorcerer"],
+    "stats": {
+        "cost": 4,
+        "health": [600, 1080, 2160],
+        "armor": 20,
+        "mr": 20,
+        "ad": 40,
+        "as": 0.6,
+        "range": 720
+    },
+    "ability": {
+        "name": "Voice of Light",
+        "passive": false,
+        "text": "Aurelion Sol breathes a large blast of fire in a line, dealing damage to enemies.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [300, 500, 700]
+        }, {
+            "name": "Channel Duration",
+            "value": [0.35]
+        }]
+    }
+}, {
+    "name": "Blitzcrank",
+    "id": "blitzcrank",
+    "origin": ["robot"],
+    "class": ["brawler"],
+    "stats": {
+        "cost": 2,
+        "health": [600, 1080, 2160],
+        "armor": 35,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.5,
+        "range": 180
+    },
+    "ability": {
+        "name": "Rocket Grab",
+        "passive": false,
+        "text": "Blitzcrank pulls the furthest enemy to him and knocks them up.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [100, 350, 600]
+        }, {
+            "name": "Stun Duration",
+            "value": 2.5
+        }, {
+            "name": "Missile Speed",
+            "value": 3000
+        }]
+    }
+}, {
+    "name": "Brand",
+    "id": "brand",
+    "origin": ["demon"],
+    "class": ["elementalist"],
+    "stats": {
+        "cost": 4,
+        "health": [700, 1260, 2520],
+        "armor": 25,
+        "mr": 20,
+        "ad": 60,
+        "as": 0.6,
+        "range": 660
+    },
+    "ability": {
+        "name": "Pyroclasm",
+        "passive": false,
+        "text": "Brand launches a bouncing fireball, damaging enemies hit.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [200, 300, 400]
+        }, {
+            "name": "Bounces",
+            "ranks": [4, 4, 6]
+        }]
+    }
+}, {
+    "name": "Braum",
+    "id": "braum",
+    "origin": ["glacial"],
+    "class": ["guardian"],
+    "stats": {
+        "cost": 2,
+        "health": [750, 1350, 2700],
+        "armor": 25,
+        "mr": 20,
+        "ad": 40,
+        "as": 0.6,
+        "range": 180
+    },
+    "ability": {
+        "name": "Unbreakable",
+        "passive": false,
+        "text": "Braum gains a barrier that blocks incoming damage.",
+        "stats": [{
+            "name": "Damage Reduction",
+            "ranks": [60, 75, 90]
+        }, {
+            "name": "Duration",
+            "value": 4
+        }]
+    }
+}, {
+    "name": "Cho'Gath",
+    "id": "chogath",
+    "origin": ["void"],
+    "class": ["brawler"],
+    "stats": {
+        "cost": 4,
+        "health": [1100, 1980, 3960],
+        "armor": 20,
+        "mr": 20,
+        "ad": 70,
+        "as": 0.55,
+        "range": 180
+    },
+    "ability": {
+        "name": "Rupture",
+        "passive": false,
+        "text": "Cho'Gath ruptures an area, stunning and damaging enemies inside of it.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [200, 400, 600]
+        }, {
+            "name": "Knock Duration",
+            "ranks": [2, 2.5, 3]
+        }, {
+            "name": "Delay",
+            "value": 1.5
+        }]
+    }
+}, {
+    "name": "Darius",
+    "id": "darius",
+    "origin": ["imperial"],
+    "class": ["knight"],
+    "stats": {
+        "cost": 1,
+        "health": [850, 1530, 3060],
+        "armor": 25,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.5,
+        "range": 180
+    },
+    "ability": {
+        "name": "Decimate",
+        "passive": false,
+        "text": "Darius swings his axe, damaging nearby enemies and healing himself based off enemies hit.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [150, 200, 250]
+        }, {
+            "name": "Healing",
+            "ranks": [100, 150, 200]
+        }]
+    }
+}, {
+    "name": "Draven",
+    "id": "draven",
+    "origin": ["imperial"],
+    "class": ["blademaster"],
+    "stats": {
+        "cost": 4,
+        "health": [700, 1260, 2520],
+        "armor": 25,
+        "mr": 20,
+        "ad": 75,
+        "as": 0.65,
+        "range": 660
+    },
+    "ability": {
+        "name": "Spinning Axes",
+        "passive": true,
+        "text": "Draven gains bonus on-hit damage and Attack Speed. Stacks up to two times.",
+        "stats": [{
+            "name": "Buff Duration",
+            "value": 8
+        }, {
+            "name": "Attack Multiplier",
+            "ranks": [1.5, 2, 2.5]
+        }, {
+            "name": "Attack Speed",
+            "ranks": [0.3, 0.45, 0.6]
+        }]
+    }
+}, {
+    "name": "Elise",
+    "id": "elise",
+    "origin": ["demon"],
+    "class": ["shapeshifter"],
+    "stats": {
+        "cost": 2,
+        "health": [500, 900, 1800],
+        "armor": 25,
+        "mr": 20,
+        "ad": 40,
+        "as": 0.6,
+        "range": 420
+    },
+    "ability": {
+        "name": "Spider Form",
+        "passive": false,
+        "text": "Elise summons Spiderlings and transforms, gaining Lifesteal.",
+        "stats": [{
+            "name": "Number of Spiderlings",
+            "ranks": [2, 3, 4]
+        }, {
+            "name": "Lifesteal",
+            "ranks": [0.25, 0.35, 0.45]
+        }, {
+            "name": "Spider Form Duration",
+            "value": 60
+        }]
+    }
+}, {
+    "name": "Evelynn",
+    "id": "evelynn",
+    "origin": ["demon"],
+    "class": ["assassin"],
+    "stats": {
+        "cost": 2,
+        "health": [550, 990, 1980],
+        "armor": 20,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.6,
+        "range": 180
+    },
+    "ability": {
+        "name": "Last Caress",
+        "passive": false,
+        "text": "Evelynn deals damage to the 3 closest enemies and teleports away. Damage is increased against low health enemies.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [200, 250, 300]
+        }, {
+            "name": "Crit Multiplier",
+            "ranks": [3, 4, 5]
+        }, {
+            "name": "Crit Threshold",
+            "value": 0.5
+        }, {
+            "name": "Blink Distance",
+            "value": 3
+        }]
+    }
+}, {
+    "name": "Fiora",
+    "id": "fiora",
+    "origin": ["noble"],
+    "class": ["blademaster"],
+    "stats": {
+        "cost": 1,
+        "health": [400, 720, 1440],
+        "armor": 25,
+        "mr": 20,
+        "ad": 40,
+        "as": 0.7,
+        "range": 180
+    },
+    "ability": {
+        "name": "Riposte",
+        "passive": false,
+        "text": "Fiora becomes immune to damage and spells. After a short delay, she stuns and damages the closest enemy.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [100, 175, 250]
+        }, {
+            "name": "Stun Duration",
+            "value": 1.5
+        }, {
+            "name": "Block Duration",
+            "value": 1.5
+        }]
+    }
+}, {
+    "name": "Gangplank",
+    "id": "gangplank",
+    "origin": ["pirate"],
+    "class": ["blademaster", "gunslinger"],
+    "stats": {
+        "cost": 3,
+        "health": [600, 1080, 2160],
+        "armor": 20,
+        "mr": 20,
+        "ad": 55,
+        "as": 0.6,
+        "range": 180
+    },
+    "ability": {
+        "name": "Powder Kegs",
+        "passive": true,
+        "text": "Gangplank periodically creates barrels. On cast, Gangplank detonates the barrels, damaging nearby enemies.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [150, 275, 400]
+        }]
+    }
+}, {
+    "name": "Garen",
+    "id": "garen",
+    "origin": ["noble"],
+    "class": ["knight"],
+    "stats": {
+        "cost": 1,
+        "health": [600, 1080, 2160],
+        "armor": 35,
+        "mr": 20,
+        "ad": 55,
+        "as": 0.55,
+        "range": 180
+    },
+    "ability": {
+        "name": "Judgement",
+        "passive": false,
+        "text": "Garen rapidly spins his sword around his body, becoming immune to magic damage and dealing damage to nearby enemies.",
+        "stats": [{
+            "name": "Damage Per Tick",
+            "ranks": [60, 90, 120]
+        }, {
+            "name": "Spin Duration",
+            "value": 4
+        }, {
+            "name": "Total Ticks",
+            "value": 9
+        }]
+    }
+}, {
+    "name": "Gnar",
+    "id": "gnar",
+    "origin": ["wild", "yordle"],
+    "class": ["shapeshifter"],
+    "stats": {
+        "cost": 4,
+        "health": [850, 1530, 3060],
+        "armor": 35,
+        "mr": 20,
+        "ad": 45,
+        "as": 0.7,
+        "range": 420
+    },
+    "ability": {
+        "name": "GNAR!",
+        "passive": false,
+        "text": "Gnar transforms, gaining health, Attack Damage and jumping behind the furthest enemy, damaging and stunning enemies nearby.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [200, 300, 400]
+        }, {
+            "name": "CC Duration",
+            "value": 2
+        }, {
+            "name": "Knockback Distance",
+            "value": 2
+        }, {
+            "name": "Transform Duration",
+            "value": 60
+        }, {
+            "name": "Transform HP",
+            "ranks": [300, 600, 900]
+        }, {
+            "name": "Transform Damage",
+            "value": [30, 60, 90]
+        }]
+    }
+}, {
+    "name": "Graves",
+    "id": "graves",
+    "origin": ["pirate"],
+    "class": ["gunslinger"],
+    "stats": {
+        "cost": 2,
+        "health": [500, 900, 1800],
+        "armor": 20,
+        "mr": 20,
+        "ad": 55,
+        "as": 0.5,
+        "range": 180
+    },
+    "ability": {
+        "name": "Buckshot",
+        "passive": true,
+        "text": "Graves' attacks deal increased damage and hit all enemies in front of him.",
+        "stats": [{
+            "name": "Damage Multiplier",
+            "ranks": [0.05, 0.1, 0.15]
+        }]
+    }
+}, {
+    "name": "Karthus",
+    "id": "karthus",
+    "origin": ["phantom"],
+    "class": ["sorcerer"],
+    "stats": {
+        "cost": 5,
+        "health": [850, 1530, 3060],
+        "armor": 25,
+        "mr": 20,
+        "ad": 65,
+        "as": 0.65,
+        "range": 660
+    },
+    "ability": {
+        "name": "Requiem",
+        "passive": false,
+        "text": "Karthus deals damage to a number of random enemies after a long channel.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [300, 575, 850]
+        }, {
+            "name": "Targets",
+            "value": [4, 7, 10]
+        }]
+    }
+}, {
+    "name": "Kassadin",
+    "id": "kassadin",
+    "origin": ["void"],
+    "class": ["sorcerer"],
+    "stats": {
+        "cost": 1,
+        "health": [550, 990, 1980],
+        "armor": 25,
+        "mr": 20,
+        "ad": 45,
+        "as": 0.65,
+        "range": 180
+    },
+    "ability": {
+        "name": "Nether Blade",
+        "passive": true,
+        "text": "Kassadin's attacks steal mana from enemies, converting it into a shield.",
+        "stats": [{
+            "name": "Shield Duration",
+            "value": 4
+        }, {
+            "name": "Mana Steal",
+            "ranks": [20, 40, 60]
+        }]
+    }
+}, {
+    "name": "Katarina",
+    "id": "katarina",
+    "origin": ["imperial"],
+    "class": ["assassin"],
+    "stats": {
+        "cost": 3,
+        "health": [450, 810, 1620],
+        "armor": 20,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.6,
+        "range": 180
+    },
+    "ability": {
+        "name": "Death Lotus",
+        "passive": false,
+        "text": "Katarina channels and fires daggers at a number of nearby enemies, dealing damage and reducing healing.",
+        "stats": [{
+            "name": "Damage Per Tick",
+            "ranks": [40, 60, 80]
+        }, {
+            "name": "Ticks Per Second",
+            "value": 6
+        }, {
+            "name": "Channel Duration",
+            "value": 2.5
+        }, {
+            "name": "Healing Reduction Duration",
+            "value": 3
+        }, {
+            "name": "Targets",
+            "ranks": [3, 5, 7]
+        }]
+    }
+}, {
+    "name": "Kayle",
+    "id": "kayle",
+    "origin": ["noble"],
+    "class": ["knight"],
+    "stats": {
+        "cost": 5,
+        "health": [800, 1440, 2880],
+        "armor": 35,
+        "mr": 20,
+        "ad": 60,
+        "as": 1.1,
+        "range": 60
+    },
+    "ability": {
+        "name": "Divine Judgement",
+        "passive": false,
+        "text": "Kayle shields the weakesst ally, making them immune to damage.",
+        "stats": [{
+            "name": "Damage",
+            "value": [500, 800, 1100]
+        }, {
+            "name": "Shield Duration",
+            "ranks": [2, 3, 4]
+        }, {
+            "name": "Extra Targets",
+            "ranks": [0, 1, 2]
+        }]
+    }
+}, {
+    "name": "Kennen",
+    "id": "kennen",
+    "origin": ["ninja", "yordle"],
+    "class": ["elementalist"],
+    "stats": {
+        "cost": 3,
+        "health": [550, 990, 1980],
+        "armor": 20,
+        "mr": 20,
+        "ad": 60,
+        "as": 0.6,
+        "range": 420
+    },
+    "ability": {
+        "name": "Slicing Maelstrom",
+        "passive": false,
+        "text": "Kennen summons a storm around him, dealing damage and stunning enemies inside of it.",
+        "stats": [{
+            "name": "Damage Per Tick",
+            "ranks": [50, 80, 110]
+        }, {
+            "name": "Tick Rate",
+            "value": 0.5
+        }, {
+            "name": "Duration",
+            "value": 3
+        }, {
+            "name": "Stun Duration",
+            "value": 1.5
+        }]
+    }
+}, {
+    "name": "Kha'Zix",
+    "id": "khazix",
+    "origin": ["void"],
+    "class": ["assassin"],
+    "stats": {
+        "cost": 1,
+        "health": [500, 900, 1800],
+        "armor": 20,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.6,
+        "range": 180
+    },
+    "ability": {
+        "name": "Taste their Fear",
+        "passive": false,
+        "text": "Kha'Zix slashes the closest enemy, dealing bonus damage to enemies that are alone.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [150, 250, 350]
+        }, {
+            "name": "Isolation Damage",
+            "ranks": [400, 600, 800]
+        }]
+    }
+}, {
+    "name": "Kindred",
+    "id": "kindred",
+    "origin": ["phantom"],
+    "class": ["ranger"],
+    "stats": {
+        "cost": 4,
+        "health": [600, 1080, 2160],
+        "armor": 20,
+        "mr": 20,
+        "ad": 55,
+        "as": 0.65,
+        "range": 660
+    },
+    "ability": {
+        "name": "Lamb's Respite",
+        "passive": false,
+        "text": "Kindred creates a zone around herself that prevents allies from dying.",
+        "stats": [{
+            "name": "Duration",
+            "ranks": [4, 5, 6]
+        }, {
+            "name": "Minimum HP",
+            "ranks": [300, 600, 900]
+        }]
+    }
+}, {
+    "name": "Leona",
+    "id": "leona",
+    "origin": ["noble"],
+    "class": ["guardian"],
+    "stats": {
+        "cost": 4,
+        "health": [750, 1350, 2700],
+        "armor": 55,
+        "mr": 20,
+        "ad": 45,
+        "as": 0.55,
+        "range": 180
+    },
+    "ability": {
+        "name": "Solar Flare",
+        "passive": false,
+        "text": "Leona calls down a solar ray that damages and slows enemies inside it. The enemy in the center is stunned.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [175, 250, 325]
+        }, {
+            "name": "Stun Duration",
+            "ranks": [5, 8, 11]
+        }, {
+            "name": "Delay",
+            "value": 0.625
+        }]
+    }
+}, {
+    "name": "Lissandra",
+    "id": "lissandra",
+    "origin": ["glacial"],
+    "class": ["elementalist"],
+    "stats": {
+        "cost": 2,
+        "health": [450, 810, 1620],
+        "armor": 20,
+        "mr": 20,
+        "ad": 40,
+        "as": 0.6,
+        "range": 660
+    },
+    "ability": {
+        "name": "Frozen Tomb",
+        "passive": false,
+        "text": "Lissandra encases the target in ice, dealing damage to nearby enemies. Below half HP, Lissandra instead encases herself, becoming untargetable.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [225, 300, 375]
+        }, {
+            "name": "Enemy Stun Duration",
+            "value": 1.5
+        }, {
+            "name": "Self Duration",
+            "value": 2
+        }, {
+            "name": "Slow Duration",
+            "value": 3
+        }, {
+            "name": "Slow Amount",
+            "value": 2
+        }, {
+            "name": "Slow Field Duration",
+            "value": 3
+        }]
+    }
+}, {
+    "name": "Lucian",
+    "id": "lucian",
+    "origin": ["noble"],
+    "class": ["gunslinger"],
+    "stats": {
+        "cost": 2,
+        "health": [600, 1080, 2160],
+        "armor": 25,
+        "mr": 20,
+        "ad": 60,
+        "as": 0.6,
+        "range": 660
+    },
+    "ability": {
+        "name": "Relentless Pursuit",
+        "passive": false,
+        "text": "Lucian dashes away to safety and attacks an enemy twice, once with Attack Damage and once with Spell Damage.",
+        "stats": [{
+            "name": "Damage Per Bullet",
+            "ranks": [25, 45, 65]
+        }, {
+            "name": "Shots",
+            "ranks": [20, 25, 30]
+        }, {
+            "name": "Duration",
+            "value": 3
+        }, {
+            "name": "Recast Lockout",
+            "value": 0.75
+        }, {
+            "name": "% Damage to Minions",
+            "value": 200
+        }]
+    }
+}, {
+    "name": "Lulu",
+    "id": "lulu",
+    "origin": ["yordle"],
+    "class": ["sorcerer"],
+    "stats": {
+        "cost": 2,
+        "health": [500, 900, 1800],
+        "armor": 25,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.6,
+        "range": 420
+    },
+    "ability": {
+        "name": "Wild Growth",
+        "passive": false,
+        "text": "Lulu grants an ally bonus Health, knocking up enemies near them.",
+        "stats": [{
+            "name": "Bonus HP",
+            "ranks": [300, 475, 650]
+        }, {
+            "name": "Extra Targets",
+            "ranks": [0, 1, 2]
+        }, {
+            "name": "Duration",
+            "value": 6
+        }, {
+            "name": "Knock Duration",
+            "value": 1.25
+        }]
+    }
+}, {
+    "name": "Miss Fortune",
+    "id": "missfortune",
+    "origin": ["pirate"],
+    "class": ["gunslinger"],
+    "stats": {
+        "cost": 5,
+        "health": [650, 1170, 2340],
+        "armor": 20,
+        "mr": 20,
+        "ad": 75,
+        "as": 0.75,
+        "range": 660
+    },
+    "ability": {
+        "name": "Bullet Time",
+        "passive": false,
+        "text": "Miss Fortune channels and fires several waves of bullets in a cone.",
+        "stats": [{
+            "name": "Total Damage",
+            "ranks": [800, 1250, 1700]
+        }, {
+            "name": "Waves",
+            "value": 14
+        }, {
+            "name": "Channel Duration",
+            "value": 3
+        }]
+    }
+}, {
+    "name": "Mordekaiser",
+    "id": "mordekaiser",
+    "origin": ["phantom"],
+    "class": ["knight"],
+    "stats": {
+        "cost": 1,
+        "health": [500, 900, 1800],
+        "armor": 35,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.5,
+        "range": 180
+    },
+    "ability": {
+        "name": "Obliterate",
+        "passive": false,
+        "text": "Mordekaiser slams his mace in front of him, dealing damage to two enemies in a line.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [200, 325, 450]
+        }, {
+            "name": "Start Distance",
+            "value": 2
+        }, {
+            "name": "Length",
+            "value": 3
+        }]
+    }
+}, {
+    "name": "Morgana",
+    "id": "morgana",
+    "origin": ["demon"],
+    "class": ["sorcerer"],
+    "stats": {
+        "cost": 3,
+        "health": [600, 1080, 2160],
+        "armor": 20,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.6,
+        "range": 420
+    },
+    "ability": {
+        "name": "Soul Shackles",
+        "passive": false,
+        "text": "Morgana fires chains to nearby enemies, dealing damage and stunning after a short delay if they are still nearby.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [250, 350, 450]
+        }, {
+            "name": "Chain Duration",
+            "value": 3
+        }, {
+            "name": "Stun Duration",
+            "ranks": [2, 4, 6]
+        }, {
+            "name": "Slow Percentage",
+            "value": 20
+        }, {
+            "name": "Range",
+            "value": 3
+        }]
+    }
+}, {
+    "name": "Nidalee",
+    "id": "nidalee",
+    "origin": ["wild"],
+    "class": ["shapeshifter"],
+    "stats": {
+        "cost": 1,
+        "health": [500, 900, 1800],
+        "armor": 20,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.65,
+        "range": 660
+    },
+    "ability": {
+        "name": "Primal Surge",
+        "passive": false,
+        "text": "Nidalee heals herself and the weakest ally, then transforms gaining Attack Damage.",
+        "stats": [{
+            "name": "Total Heal",
+            "ranks": [200, 400, 600]
+        }, {
+            "name": "Heal Duration",
+            "value": 6
+        }, {
+            "name": "Transformation Duration",
+            "value": 60
+        }, {
+            "name": "Delay",
+            "value": 0.5
+        }, {
+            "name": "Transform Damage",
+            "ranks": [30, 75, 120]
+        }]
+    }
+}, {
+    "name": "Poppy",
+    "id": "poppy",
+    "origin": ["yordle"],
+    "class": ["knight"],
+    "stats": {
+        "cost": 3,
+        "health": [750, 1350, 2700],
+        "armor": 30,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.5,
+        "range": 180
+    },
+    "ability": {
+        "name": "Keeper's Verdict",
+        "passive": false,
+        "text": "Poppy swings her hammer, damaging and knocking up the closest enemy.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [300, 400, 500]
+        }, {
+            "name": "Knockback Duration",
+            "value": 1
+        }, {
+            "name": "Stun Duration",
+            "ranks": [1.5, 2.5, 3.5]
+        }, {
+            "name": "Delay",
+            "value": 0.75
+        }]
+    }
+}, {
+    "name": "Pyke",
+    "id": "pyke",
+    "origin": ["pirate"],
+    "class": ["assassin"],
+    "stats": {
+        "cost": 2,
+        "health": [600, 1080, 2160],
+        "armor": 25,
+        "mr": 20,
+        "ad": 60,
+        "as": 0.55,
+        "range": 180
+    },
+    "ability": {
+        "name": "Phantom Undertow",
+        "passive": false,
+        "text": "Pyke dashes behind the furthest enemy, creating an afterimage that stuns enemies it passes through.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [150, 200, 250]
+        }, {
+            "name": "Stun Duration",
+            "ranks": [2, 2.5, 3]
+        }, {
+            "name": "Stun Delay",
+            "value": 1
+        }]
+    }
+}, {
+    "name": "Rek'Sai",
+    "id": "reksai",
+    "origin": ["void"],
+    "class": ["brawler"],
+    "stats": {
+        "cost": 2,
+        "health": [650, 1170, 2340],
+        "armor": 20,
+        "mr": 20,
+        "ad": 40,
+        "as": 0.65,
+        "range": 180
+    },
+    "ability": {
+        "name": "Burrow",
+        "passive": false,
+        "text": "Rek'Sai burrows for a short duration becoming untargetable and heals. When Rek'Sai unburrows she deals damage and knocks up the closest enemy.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [150, 200, 250]
+        }, {
+            "name": "Heal Amount",
+            "ranks": [300, 400, 500]
+        }, {
+            "name": "Heal Tick Rate",
+            "value": 0.5
+        }, {
+            "name": "Burrow Duration",
+            "value": 2
+        }, {
+            "name": "Knock Duration",
+            "value": 1
+        }]
+    }
+}, {
+    "name": "Rengar",
+    "id": "rengar",
+    "origin": ["wild"],
+    "class": ["assassin"],
+    "stats": {
+        "cost": 3,
+        "health": [550, 990, 1980],
+        "armor": 20,
+        "mr": 20,
+        "ad": 55,
+        "as": 0.55,
+        "range": 180
+    },
+    "ability": {
+        "name": "Savagery",
+        "passive": false,
+        "text": "Rengar leaps to the weakest enemy, gaining Attack Speed and Critical Strike Chance.",
+        "stats": [{
+            "name": "Damage Multiplier",
+            "ranks": [2.1, 3.2, 4.3]
+        }, {
+            "name": "Attack Speed",
+            "ranks": [0.5, 0.65, 0.8]
+        }, {
+            "name": "Critical Strike Chance",
+            "value": 0.25
+        }, {
+            "name": "Buff Duration",
+            "value": 6
+        }]
+    }
+}, {
+    "name": "Sejuani",
+    "id": "sejuani",
+    "origin": ["glacial"],
+    "class": ["knight"],
+    "stats": {
+        "cost": 4,
+        "health": [850, 1530, 3060],
+        "armor": 35,
+        "mr": 25,
+        "ad": 45,
+        "as": 0.55,
+        "range": 180
+    },
+    "ability": {
+        "name": "Glacial Prison",
+        "passive": false,
+        "text": "Sejuani creates a large glacial storm, stunning enemies within it after a short delay.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [100, 175, 250]
+        }, {
+            "name": "Stun Duration",
+            "ranks": [3, 4, 5]
+        }, {
+            "name": "Explosion Delay",
+            "ranks": [0, 2, 2]
+        }]
+    }
+}, {
+    "name": "Shen",
+    "id": "shen",
+    "origin": ["ninja"],
+    "class": ["blademaster"],
+    "stats": {
+        "cost": 2,
+        "health": [650, 1170, 2340],
+        "armor": 30,
+        "mr": 20,
+        "ad": 55,
+        "as": 0.6,
+        "range": 180
+    },
+    "ability": {
+        "name": "Spirit's Refuge",
+        "passive": false,
+        "text": "Shen creates a zone around himself, allowing allies to dodge all attacks.",
+        "stats": [{
+            "name": "Zone Duration",
+            "ranks": [3, 4, 5]
+        }]
+    }
+}, {
+    "name": "Shyvana",
+    "id": "shyvana",
+    "origin": ["dragon"],
+    "class": ["shapeshifter"],
+    "stats": {
+        "cost": 3,
+        "health": [550, 990, 1980],
+        "armor": 20,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.65,
+        "range": 180
+    },
+    "ability": {
+        "name": "Dragon's Descent",
+        "passive": false,
+        "text": "Shyvana dashes and transforms, gaining Attack Damage and Attack Range. When transformed, her attacks set enemies on fire.",
+        "stats": [{
+            "name": "Burn Damage",
+            "ranks": [200, 300, 400]
+        }, {
+            "name": "Burn Duration",
+            "value": 3
+        }, {
+            "name": "Transform Duration",
+            "value": 60
+        }, {
+            "name": "Transform Damage",
+            "ranks": [50, 90, 130]
+        }]
+    }
+}, {
+    "name": "Swain",
+    "id": "swain",
+    "origin": ["demon", "imperial"],
+    "class": ["shapeshifter"],
+    "stats": {
+        "cost": 5,
+        "health": [850, 1530, 3060],
+        "armor": 25,
+        "mr": 20,
+        "ad": 65,
+        "as": 0.65,
+        "range": 420
+    },
+    "ability": {
+        "name": "Demonflare",
+        "passive": false,
+        "text": "Swain transforms, draining health from all nearby enemies. At the end of his transformation, Swain sends out a burst of energy dealing damage to nearby enemies.",
+        "stats": [{
+            "name": "Soulflare Damage",
+            "ranks": [300, 600, 900]
+        }, {
+            "name": "Damage Per Tick",
+            "ranks": [50, 100, 150]
+        }, {
+            "name": "Heal Per Tick",
+            "ranks": [50, 90, 130]
+        }, {
+            "name": "Transform Duration",
+            "value": 6
+        }]
+    }
+}, {
+    "name": "Tristana",
+    "id": "tristana",
+    "origin": ["yordle"],
+    "class": ["gunslinger"],
+    "stats": {
+        "cost": 1,
+        "health": [500, 900, 1800],
+        "armor": 20,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.65,
+        "range": 890
+    },
+    "ability": {
+        "name": "Explosive Charge",
+        "passive": false,
+        "text": "Tristana places a bomb on her current target that detonates after 3 attacks, damaging nearby enemies.",
+        "stats": [{
+            "name": "Charge Damage",
+            "ranks": [50, 75, 100]
+        }, {
+            "name": "Damage Increase Per Stack",
+            "value": 0.5
+        }, {
+            "name": "Charge Duration",
+            "value": 4
+        }]
+    }
+}, {
+    "name": "Varus",
+    "id": "varus",
+    "origin": ["demon"],
+    "class": ["ranger"],
+    "stats": {
+        "cost": 2,
+        "health": [500, 900, 1800],
+        "armor": 25,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.7,
+        "range": 890
+    },
+    "ability": {
+        "name": "Piercing Arrow",
+        "passive": false,
+        "text": "Varus charges and fires an arrow, dealing damage to all enemies in a line.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [400, 600, 800]
+        }, {
+            "name": "Range",
+            "value": 8
+        }]
+    }
+}, {
+    "name": "Vayne",
+    "id": "vayne",
+    "origin": ["noble"],
+    "class": ["ranger"],
+    "stats": {
+        "cost": 1,
+        "health": [550, 990, 1980],
+        "armor": 25,
+        "mr": 20,
+        "ad": 45,
+        "as": 0.6,
+        "range": 660
+    },
+    "ability": {
+        "name": "Slicing Maelstrom",
+        "passive": true,
+        "text": "Vayne deals bonus true damage every third attack based on the enemy's maximum health.",
+        "stats": [{
+            "name": "% Damage",
+            "ranks": [8, 10, 12]
+        }]
+    }
+}, {
+    "name": "Veigar",
+    "id": "veigar",
+    "origin": ["yordle"],
+    "class": ["sorcerer"],
+    "stats": {
+        "cost": 3,
+        "health": [450, 810, 1620],
+        "armor": 20,
+        "mr": 20,
+        "ad": 45,
+        "as": 0.55,
+        "range": 660
+    },
+    "ability": {
+        "name": "Primordial Burst",
+        "passive": false,
+        "text": "Veigar blasts an enemy with magical energy, dealing damage. This spell instantly kills if the enemy is a lower star level than veigar.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [300, 450, 600]
+        }]
+    }
+}, {
+    "name": "Volibear",
+    "id": "volibear",
+    "origin": ["glacial"],
+    "class": ["brawler"],
+    "stats": {
+        "cost": 2,
+        "health": [650, 1170, 2340],
+        "armor": 35,
+        "mr": 20,
+        "ad": 75,
+        "as": 0.5,
+        "range": 180
+    },
+    "ability": {
+        "name": "Thunder Claws",
+        "passive": false,
+        "text": "Volibear empowers his attacks to chain between enemies, applying on-hit effects.",
+        "stats": [{
+            "name": "Chain Damage Multiplier",
+            "ranks": [0.8, 0.9, 1]
+        }, {
+            "name": "Bounces",
+            "ranks": [3, 4, 5]
+        }, {
+            "name": "Buff Duration",
+            "value": 20
+        }, {
+            "name": "Range",
+            "value": 1
+        }]
+    }
+}, {
+    "name": "Warwick",
+    "id": "warwick",
+    "origin": ["wild"],
+    "class": ["brawler"],
+    "stats": {
+        "cost": 1,
+        "health": [600, 1080, 2160],
+        "armor": 30,
+        "mr": 20,
+        "ad": 50,
+        "as": 0.6,
+        "range": 180
+    },
+    "ability": {
+        "name": "Infinite Duress",
+        "passive": false,
+        "text": "Warwick pounces onto the lowest health enemy, stunning and damaging them while healing himself.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [150, 225, 300]
+        }, {
+            "name": "Hits",
+            "value": 3
+        }, {
+            "name": "Duration",
+            "value": 1.5
+        }]
+    }
+}, {
+    "name": "Yasuo",
+    "id": "yasuo",
+    "origin": ["exile"],
+    "class": ["blademaster"],
+    "stats": {
+        "cost": 5,
+        "health": [650, 1170, 2340],
+        "armor": 35,
+        "mr": 20,
+        "ad": 65,
+        "as": 1,
+        "range": 180
+    },
+    "ability": {
+        "name": "Steel Tempest",
+        "passive": false,
+        "text": "Yasuo stabs forward, damaging two enemies in a line. On third cast, Yasuo instead launches a tornado dealing damage and knocking up enemies in a line.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [150, 250, 350]
+        }, {
+            "name": "Range",
+            "value": 2
+        }, {
+            "name": "Empowered Range",
+            "value": 6
+        }, {
+            "name": "Empower Count",
+            "value": 2
+        }, {
+            "name": "Knock Duration",
+            "value": 1.25
+        }]
+    }
+}, {
+    "name": "Zed",
+    "id": "zed",
+    "origin": ["ninja"],
+    "class": ["assassin"],
+    "stats": {
+        "cost": 2,
+        "health": [500, 900, 1800],
+        "armor": 25,
+        "mr": 20,
+        "ad": 55,
+        "as": 0.6,
+        "range": 180
+    },
+    "ability": {
+        "name": "Razor Shuriken",
+        "passive": false,
+        "text": "Zed throws a shuriken, dealing damage to enemies in a line.",
+        "stats": [{
+            "name": "Damage",
+            "ranks": [200, 300, 400]
+        }, {
+            "name": "Range",
+            "value": 4
+        }]
+    }
+}]
