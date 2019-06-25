@@ -19,6 +19,8 @@ filenames = os.listdir("screenshots")
 #Gets the names of all the champions from the folder which has all the champion screenshots
 #This can be changed so that it only looks for the champions you care for
 champions = os.listdir("champions")
+#GUI should add and remove champions from the following list
+champions = ["darius.png", "garen.png", "vayne.png", "lucian.png"]
 
 mode = input("A) use screenshots folder and output put results in championtest\nB) use live screenshots, save them in livescreenshots and output results in livechampiontest\n")
 
@@ -45,7 +47,7 @@ if mode.upper() == "A":
             #cv2.imshow('resized query', query)
 
             result = cv2.matchTemplate(currentimg, query, cv2.TM_CCOEFF_NORMED)
-            threshold = 0.95
+            threshold = 0.9
             loc = np.where(result >= threshold)
 
             #labelling the champion icons which have been detected and adding the found champions to the list
@@ -56,7 +58,8 @@ if mode.upper() == "A":
 
         #Making a copy of the current screenshot but adding text and labelling it with what has been found
         currentimgwithtext = currentimg
-        cv2.putText(currentimgwithtext, str(Counter(availablechampions)), (10,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
+        #cv2.putText(currentimgwithtext, str(Counter(availablechampions)), (10,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
+        cv2.putText(currentimgwithtext, str(list(set(availablechampions))), (10,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
 
         #output the screenshots with text and labels on them
         #cv2.namedWindow('currentimgwithtext',cv2.WINDOW_NORMAL)
@@ -68,7 +71,12 @@ if mode.upper() == "A":
         #save labelled screenshots
         cv2.imwrite("championtest\\new"+screenshot_name, currentimgwithtext)
         
-        print(Counter(availablechampions))
+        #print(Counter(availablechampions))
+        #print(list(set(availablechampions)))
+        
+        if availablechampions:
+            print(list(set(availablechampions)))
+            print("Found a champion you were looking for.")
 
 if mode.upper() == "B":
     while True:
@@ -105,7 +113,8 @@ if mode.upper() == "B":
 
         #Making a copy of the current screenshot but adding text and labelling it with what has been found
         currentimgwithtext = currentimg
-        cv2.putText(currentimgwithtext, str(Counter(availablechampions)), (10,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
+        #cv2.putText(currentimgwithtext, str(Counter(availablechampions)), (10,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
+        cv2.putText(currentimgwithtext, str(list(set(availablechampions))), (10,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
 
         #output the screenshots with text and labels on them
         #cv2.namedWindow('currentimgwithtext',cv2.WINDOW_NORMAL)
@@ -117,4 +126,17 @@ if mode.upper() == "B":
         #save labelled screenshots
         cv2.imwrite("livechampiontest\\new"+screenshot_name, currentimgwithtext)
         
-        print(Counter(availablechampions))
+        #print(Counter(availablechampions))
+        #print(list(set(availablechampions)))
+        
+        if availablechampions: #checking if list is empty
+            print(list(set(availablechampions)))
+            print("Found a champion you were looking for.")
+            #GUI should make a proper notfication from this
+
+
+"""
+no longer care about how many of each champ
+if champ is found hten we want ot outpu t a noise to the user so they can react
+user can select the champions they want to year a respond about
+"""

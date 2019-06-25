@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TFT Helper</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</head>
+
+<body>
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>TFT Helper</h2>
+                        <h3>Riot</h3>
+                        <p>Never miss another champion</p>
+                    </div>
+                        <p1 id="listoutput"></p1>
+                        <br>
+                        <p1 id="test"></p1>
+                        <br>
+                        <button onclick="updateChamps()">Play Sound</button>
+                        <br>
+                        <button onclick="toggleChamp('aatrox.png')"><img id= 'aatrox.png' src="img/champions/aatrox.png"></button>
+                        <button onclick="toggleChamp('ahri.png')"><img id= 'ahri.png' src="img/champions/ahri.png"></button>
+                        <button onclick="toggleChamp('akali.png')"><img id= 'akali.png' src="img/champions/akali.png"></button>
+                        <button onclick="toggleChamp('anivia.png')"><img id= 'anivia.png' src="img/champions/anivia.png"></button>
+                        <button onclick="toggleChamp('ashe.png')"><img id= 'ashe.png' src="img/champions/ashe.png"></button>
+                        <button onclick="toggleChamp('aurelionsol.png')"><img id= 'aurelionsol.png' src="img/champions/aurelionsol.png"></button>
+                        <button onclick="toggleChamp('blitzcrank.png')"><img id= 'blitzcrank.png' src="img/champions/blitzcrank.png"></button>
+                        <button onclick="toggleChamp('brand.png')"><img id= 'brand.png' src="img/champions/brand.png"></button>
+                        <button onclick="toggleChamp('braum.png')"><img id= 'braum.png' src="img/champions/braum.png"></button>
+                        <button onclick="toggleChamp('chogath.png')"><img id= 'chogath.png' src="img/champions/chogath.png"></button>
+                        <button onclick="toggleChamp('darius.png')"><img id= 'darius.png' src="img/champions/darius.png"></button>
+                        <button onclick="toggleChamp('draven.png')"><img id= 'draven.png' src="img/champions/draven.png"></button>
+                        <button onclick="toggleChamp('elise.png')"><img id= 'elise.png' src="img/champions/elise.png"></button>
+                        <button onclick="toggleChamp('evelynn.png')"><img id= 'evelynn.png' src="img/champions/evelynn.png"></button>
+                        <button onclick="toggleChamp('fiora.png')"><img id= 'fiora.png' src="img/champions/fiora.png"></button>
+                        <button onclick="toggleChamp('gangplank.png')"><img id= 'gangplank.png' src="img/champions/gangplank.png"></button>
+                        <button onclick="toggleChamp('garen.png')"><img id= 'garen.png' src="img/champions/garen.png"></button>
+                        <button onclick="toggleChamp('gnar.png')"><img id= 'gnar.png' src="img/champions/gnar.png"></button>
+                        <button onclick="toggleChamp('graves.png')"><img id= 'graves.png' src="img/champions/graves.png"></button>
+                        <button onclick="toggleChamp('karthus.png')"><img id= 'karthus.png' src="img/champions/karthus.png"></button>
+                        <button onclick="toggleChamp('kassadin.png')"><img id= 'kassadin.png' src="img/champions/kassadin.png"></button>
+                        <button onclick="toggleChamp('katarina.png')"><img id= 'katarina.png' src="img/champions/katarina.png"></button>
+                        <button onclick="toggleChamp('kayle.png')"><img id= 'kayle.png' src="img/champions/kayle.png"></button>
+                        <button onclick="toggleChamp('kennen.png')"><img id= 'kennen.png' src="img/champions/kennen.png"></button>
+                        <button onclick="toggleChamp('khazix.png')"><img id= 'khazix.png' src="img/champions/khazix.png"></button>
+                        <button onclick="toggleChamp('kindred.png')"><img id= 'kindred.png' src="img/champions/kindred.png"></button>
+                        <button onclick="toggleChamp('leona.png')"><img id= 'leona.png' src="img/champions/leona.png"></button>
+                        <button onclick="toggleChamp('lissandra.png')"><img id= 'lissandra.png' src="img/champions/lissandra.png"></button>
+                        <button onclick="toggleChamp('lucian.png')"><img id= 'lucian.png' src="img/champions/lucian.png"></button>
+                        <button onclick="toggleChamp('lulu.png')"><img id= 'lulu.png' src="img/champions/lulu.png"></button>
+                        <button onclick="toggleChamp('missfortune.png')"><img id= 'missfortune.png' src="img/champions/missfortune.png"></button>
+                        <button onclick="toggleChamp('mordekaiser.png')"><img id= 'mordekaiser.png' src="img/champions/mordekaiser.png"></button>
+                        <button onclick="toggleChamp('morgana.png')"><img id= 'morgana.png' src="img/champions/morgana.png"></button>
+                        <button onclick="toggleChamp('nidalee.png')"><img id= 'nidalee.png' src="img/champions/nidalee.png"></button>
+                        <button onclick="toggleChamp('poppy.png')"><img id= 'poppy.png' src="img/champions/poppy.png"></button>
+                        <button onclick="toggleChamp('pyke.png')"><img id= 'pyke.png' src="img/champions/pyke.png"></button>
+                        <button onclick="toggleChamp('reksai.png')"><img id= 'reksai.png' src="img/champions/reksai.png"></button>
+                        <button onclick="toggleChamp('rengar.png')"><img id= 'rengar.png' src="img/champions/rengar.png"></button>
+                        <button onclick="toggleChamp('sejuani.png')"><img id= 'sejuani.png' src="img/champions/sejuani.png"></button>
+                        <button onclick="toggleChamp('shen.png')"><img id= 'shen.png' src="img/champions/shen.png"></button>
+                        <button onclick="toggleChamp('shyvana.png')"><img id= 'shyvana.png' src="img/champions/shyvana.png"></button>
+                        <button onclick="toggleChamp('swain.png')"><img id= 'swain.png' src="img/champions/swain.png"></button>
+                        <button onclick="toggleChamp('tristana.png')"><img id= 'tristana.png' src="img/champions/tristana.png"></button>
+                        <button onclick="toggleChamp('varus.png')"><img id= 'varus.png' src="img/champions/varus.png"></button>
+                        <button onclick="toggleChamp('vayne.png')"><img id= 'vayne.png' src="img/champions/vayne.png"></button>
+                        <button onclick="toggleChamp('veigar.png')"><img id= 'veigar.png' src="img/champions/veigar.png"></button>
+                        <button onclick="toggleChamp('volibear.png')"><img id= 'volibear.png' src="img/champions/volibear.png"></button>
+                        <button onclick="toggleChamp('warwick.png')"><img id= 'warwick.png' src="img/champions/warwick.png"></button>
+                        <button onclick="toggleChamp('yasuo.png')"><img id= 'yasuo.png' src="img/champions/yasuo.png"></button>
+                        <button onclick="toggleChamp('zed.png')"><img id= 'zed.png' src="img/champions/zed.png"></button>
+
+                    <!--<button onclick="getList()">Output Available Champions</button>-->
+                    <!--<button onclick="updateText()">Update Text</button>-->
+
+                </div>
+            </div>
+        </div>
+        <div class="welcome-thumb">
+
+            <p1 id="??"></p1>
+
+        </div>
+    </section>
+</body>
+</html>
