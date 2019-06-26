@@ -5,6 +5,8 @@ TFTHelper - An overlay tool to help with Riot's TFT
 Select the items you have to quickly see the items you could make.
 If you want to try another set of items, press the Reset Selection button at the top.
 
+[Download Link](https://send.firefox.com/download/72689fadcec6a99e/#MRC66mj1EDAL-KiP5cUS7w)
+
 ![ItemSheetExample](ItemSheet%20Example.png)
 
 # Win Tracker
