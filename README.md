@@ -5,7 +5,7 @@ TFTHelper - An overlay tool to help with Riot's TFT
 Select the items you have to quickly see the items you could make.
 If you want to try another set of items, press the Reset Selection button at the top.
 
-[[https://raw.githubusercontent.com/AliMZaini/TFTHelper/master/ItemSheet%20Example.png?token=AMGO5NLSJJSNO7TG4THJWRK5CK5MI]]
+![ItemSheetExample](https://raw.githubusercontent.com/AliMZaini/TFTHelper/master/ItemSheet%20Example.png?token=AMGO5NLSJJSNO7TG4THJWRK5CK5MI)
 
 # Win Tracker
 Tracks wins, loses and positions for every game and shows your winrate and average position. Requires manual input after every game.
