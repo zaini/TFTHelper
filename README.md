@@ -15,7 +15,11 @@ When a champion you want appears on screen you will be notified by a sound so yo
 Works by taking a screenshot of the game and analysing it.
 Still need to add all champions and make it more usable before releasing.
 
+![ChampNotifierExample](ChampionNotifier%20Example.png)
+
 # Item Notifier
-This feature requires a lot of work, but the intention is to have it track items as they appear and use Machine Learning to help suggest what items you go for and build.
+This still requires a lot of work, but the intention is to have it track items as they appear and use Machine Learning to help suggest what items you go for and build.
+
+![ItemTrackerExample](ItemTracker%20Example.png)
 
 # etc...
