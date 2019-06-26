@@ -25,4 +25,6 @@ This still requires a lot of work, but the intention is to have it track items a
 
 ![ItemTrackerExample](ExampleScreenshots/ItemTracker%20Example.png)
 
+There are some plans to add ML features to give suggestions on what to build.
+
 # etc...
