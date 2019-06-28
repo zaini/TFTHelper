@@ -8,6 +8,7 @@ If you want to try another set of items, press the Reset Selection button at the
 [Download Link](https://github.com/AliMZaini/TFTHelper/raw/master/TFTHelper%20-%20ItemsSheet.exe)
 
 ![ItemSheetExample](ExampleScreenshots/ItemSheet%20Example.png)
+![itemsheetgifexample](https://i.imgur.com/rMql50G.gifv)
 
 # Win Tracker
 Tracks wins, loses and positions for every game and shows your winrate and average position. Requires manual input after every game.
