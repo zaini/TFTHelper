@@ -5,7 +5,7 @@ TFTHelper - Tools to help with Riot's TFT
 Select the items you have to quickly see the items you could make.
 If you want to try another set of items, press the Reset Selection button at the top.
 
-[Download Link](https://github.com/AliMZaini/TFTHelper/raw/master/TFTHelper%20-%20ItemsSheet.exe)
+[Download Link](https://github.com/AliMZaini/TFTHelper/blob/master/TFTHelper%20-%20Item%20Cheat%20Sheet/TFTHelper%20-%20Item%20Cheat%20Sheet/dist/TFTHelper%20-%20ItemsSheet.exe) or preferrably, just use this website: https://alimzaini.github.io/TFTHelper/
 
 ![itemsheetgifexample](ExampleScreenshots/itemsheetgifexample.gif)
 
