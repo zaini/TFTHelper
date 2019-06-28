@@ -7,7 +7,6 @@ If you want to try another set of items, press the Reset Selection button at the
 
 [Download Link](https://github.com/AliMZaini/TFTHelper/raw/master/TFTHelper%20-%20ItemsSheet.exe)
 
-![ItemSheetExample](ExampleScreenshots/ItemSheet%20Example.png)
 ![itemsheetgifexample](ExampleScreenshots/itemsheetgifexample.gif)
 
 # Win Tracker
