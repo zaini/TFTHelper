@@ -1,0 +1,9 @@
+virtualenv ENV
+.\\env\Scripts\activate
+
+pip install pyinstaller
+pip install eel
+
+cd to where python file is
+
+python -m eel main.py web --onefile --noconsole --icon=icon.ico
