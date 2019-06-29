@@ -9,6 +9,8 @@ If you want to try another set of items, press the Reset Selection button at the
 
 You can open the website using an Overwolf Browser to make it an overlay on the game so you don't have to tab out: https://www.overwolf.com/app/Overwolf-Browser example of this: https://imgur.com/ZNBxlKI
 
+![OverlayExample](ExampleScreenshots/OverlayExample.gif)
+
 ![itemsheetgifexample](ExampleScreenshots/itemsheetgifexample.gif)
 
 # Win Tracker
