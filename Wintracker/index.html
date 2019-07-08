@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TFT Helper</title>
+    <link href="style.css" rel="stylesheet">
+    <!--<script type="text/javascript" src="/eel.js"></script>-->
+    <script type="text/javascript" src="main.js"></script>
+    <script src="modules/jquery-3.4.1.min.js"></script>
+    
+</head>
+
+<body onload="openTab(event, 'Win Tracker')">
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>TFT Helper</h2>
+                        <h3>Riot</h3>
+                        <p>Never miss another champion or forget how to craft</p>
+                    </div>
+
+                    <div class="tab">
+                      <button class="tablinks" onclick="openTab(event, 'Item Crafting')">Item Crafting</button>
+                      <button class="tablinks" onclick="openTab(event, 'Win Tracker')">Win Tracker</button>
+                      <button class="tablinks" onclick="openTab(event, 'Champion Notifier')">Champion Notifier</button>
+                    </div>
+
+                    <div id="Item Crafting" class="tabcontent">
+                        <div style="margin-right: 0px; margin-left: auto; float: right;">
+
+                            <table style="margin-right: 0px; margin-left: auto; float: right;" width="260" height="64">
+                                <h1 style="text-align: center;color:#262626">Craftable Items</h1>
+                                <br>
+
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                    <td class = 'item'></td>
+                                </tr>
+                                <tr>
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                    <div id="Win Tracker" class="tabcontent" style="color:white;">
+
+                        <p1>Win Tracker (Wins are defined as finishing top 4)</p1><br>
+                        <p2>Wins: </p2>
+                        <p2>Loses: </p2>
+                        <p2>Winrate: </p2>
+                        <p2>Average Position: </p2>
+
+                        <form onsubmit="addToRecord()" id="recordForm">
+
+                            <label for="position">Position</label>
+                            <input type="text" id="position" name="position" placeholder="Finished position..">
+
+                            <label for="Notes">Notes</label>
+                            <input type="text" id="Notes" name="Notes" placeholder="Notes..">
+
+                            <input type="submit" value="Submit">
+
+                        </form>
+
+                    </div>
+
+                    <div id="Champion Notifier" class="tabcontent">
+
+                        <p1>Champion Notifier</p1>
+
+                    </div>
+
+            </div>
+        </div>
+        <div class="welcome-thumb">
+
+            <p1 id="??"></p1>
+
+        </div>
+    </section>
+</body>
+</html>

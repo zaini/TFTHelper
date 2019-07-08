@@ -1,0 +1,36 @@
+POST ABOUT UPDATE AT 21:30 OR 11:30
+
+Add to readme:
+Credit Kamal
+
+Features:
+RECODE CHAMPION NOTIFIER TO BE LIKE ITEM HELPER
+PUT CHAMPION NOTIFIER AS A TAB ON ITEM HELPER
+ADD WIN TRACKER AS A TAB
+	SAVES TO A FILE WHICH IS READ AND CAN BE EDITED
+	CALCULATES WINRATE AND AVERAGE POSITION
+	ALLOW PLAYER TO ADD NOTES FOR THE GAME
+MAKE IT AN OVERLAY
+
+
+For champion notifier allow user to be notified for anything of a certain class
+Take screenshots for all champions
+Make it an overlay (helps those with one monitor)
+
+
+Globally tracks the amount of units left in the pool
+Make Android application
+Remove all eel. All of items can be done in js
+
+
+Fully make Win Tracker
+Item Cheat Sheet (try it without the table, just selecting items. 3-4 rows? make it scale? show how to make craftable items)
+Champion detection using GUI to add and remove from list, non-optimised
+Item detection, with GUI for list, and hooked up to item cheat sheet
+Add all this to 'docs - WIP'
+Add to Overwolf/Make it all an overlay
+
+
+TFT shop simulator?
+Use Overwolf to track champions in game to make TFT shop simulator accurate.
+Use Reckful math to suggest whether or not to level/reroll

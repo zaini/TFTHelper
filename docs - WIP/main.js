@@ -10,8 +10,7 @@ var cheatsheet = [['infinity_edge.png', 'gunblade.png', 'divine.png', 'shojin.pn
               ['guardian_angel.png', 'locket.png', 'phantom_dancer.png', 'frozen_heart.png', 'thornmail.png', 'sword_breaker.png', 'red_buff.png', 'knights_vow.png'],
               ['bloodthirster.png', 'ionic_spark.png', 'cursed_blade.png', 'hush.png', 'sword_breaker.png', 'dragons_claw.png', 'zephyr.png', 'runaans_hurricane.png'],
               ['zekes_herald.png', 'morellonomicon.png', 'titanic_hydra.png', 'redemption.png', 'red_buff.png', 'zephyr.png', 'warmogs.png', 'frozen_mallet.png'],
-              ['ghostblade.png', 'yuumi.png', 'botrk.png', 'darkin.png', 'knights_vow.png', 'runaans_hurricane.png', 'frozen_mallet.png', 'force_of_nature.png']
-              ];
+              ['ghostblade.png', 'yuumi.png', 'botrk.png', 'darkin.png', 'knights_vow.png', 'runaans_hurricane.png', 'frozen_mallet.png', 'force_of_nature.png']];
 
 
 //Inverts the item colour
@@ -21,31 +20,31 @@ function updateSheet(item, colour) {
 		item = item.slice(0,-1);
 	}
 
-	if(colour == null){
+	if(colour === null){
 		for (var i = imageSourceForItem.length - 1; i >= 0; i--) {
 			if(imageSourceForItem[i].src.includes("img/items/"+item)) {
-	       		imageSourceForItem[i].src = "img/items/grayscale/gray"+item;
+				imageSourceForItem[i].src = "img/items/grayscale/gray"+item;
 
-	  		}else if(imageSourceForItem[i].src.includes("img/items/grayscale/gray"+item)) {
-	        	imageSourceForItem[i].src = "img/items/"+item;
+		}else if(imageSourceForItem[i].src.includes("img/items/grayscale/gray"+item)) {
+			imageSourceForItem[i].src = "img/items/"+item;
 
-	   		};
+		}
 
-		};
-	}else if (colour == true) {
+		}
+	}else if (colour === true) {
 		for (var i = imageSourceForItem.length - 1; i >= 0; i--) {
 			if(imageSourceForItem[i].src.includes("img/items/grayscale/gray"+item)) {
-	        	imageSourceForItem[i].src = "img/items/"+item;
-	        };
-		};
-	}else if (colour == false) {
+				imageSourceForItem[i].src = "img/items/"+item;
+	        }
+		}
+	}else if (colour === false) {
 		for (var i = imageSourceForItem.length - 1; i >= 0; i--) {
 			if(imageSourceForItem[i].src.includes("img/items/"+item)) {
-	       		imageSourceForItem[i].src = "img/items/grayscale/gray"+item;
-	        };
-		};
-	};
-};
+				imageSourceForItem[i].src = "img/items/grayscale/gray"+item;
+			}
+		}
+	}
+}
 
 function selectItem(item){
 	//Only accept inputs if the item clicked is a primary item
@@ -64,13 +63,13 @@ function selectItem(item){
 				ownedItemsNumbers.push(itemDictionary[item]);
 			}
 			
-		};
+		}
 
 		//Clears all highlighted possible items
 		for (var i = possibleItems.length - 1; i >= 0; i--) {
 			updateSheet(possibleItems[i], false);
 
-		};
+		}
 
 		possibleItems = [];
 
@@ -80,21 +79,21 @@ function selectItem(item){
 		}else{
 			for (var a = ownedItemsNumbers.length - 1; a >= 0; a--) {
 				for (var b = ownedItemsNumbers.length - 1; b >= 0; b--) {
-					if (possibleItems.includes(cheatsheet[ownedItemsNumbers[a]][ownedItemsNumbers[b]]) == false && a != b) {
+					if (possibleItems.includes(cheatsheet[ownedItemsNumbers[a]][ownedItemsNumbers[b]]) === false && a != b) {
 						possibleItems.push(cheatsheet[ownedItemsNumbers[a]][ownedItemsNumbers[b]]);
 						//console.log("possible items:"+possibleItems)
 
-					};
-				};
-			};
+					}
+				}
+			}
 
-		};
+		}
 
 		//Highlight the possibleItems
 		for (var i = possibleItems.length - 1; i >= 0; i--) {
 			updateSheet(possibleItems[i], true);
 			
-		};
+		}
 
 		addItemToCraftable(possibleItems);
 
@@ -109,13 +108,13 @@ function resetSelection(){
 	//Update table so that primary and secondary items are gray and ownedItems, ownedItemsNumbers and possibleItems lists are empty. Then call addItemToCraftable to clear that too.
 	for (var i = ownedItems.length - 1; i >= 0; i--) {
 		updateSheet(ownedItems[i], false);
-	};
+	}
 	ownedItems = [];
 	ownedItemsNumbers = [];
 
 	for (var i = possibleItems.length - 1; i >= 0; i--) {
 		updateSheet(possibleItems[i], false);
-	};
+	}
 
 	possibleItems = [];
 	
@@ -133,12 +132,11 @@ function addItemToCraftable(possibleItems){
 	for (var i = imageSourceForItem.length - 1; i >= 0; i--) {
 		imageSourceForItem[i].innerHTML = "<td class = 'item' style='width: 64px; height: 64px;'></td>";
 
-	};
+	}
 	for (var i = possibleItems.length - 1; i >= 0; i--) {
 		imageSourceForItem[i].innerHTML = "<td class = 'item'><div class='tooltip'><img class= '"+possibleItems[i]+"' src='img/items/"+possibleItems[i]+"'><span class='tooltiptext'>"+cheatsheetDictionary[possibleItems[i]]+"</span></div></td>";
-		possibleItems[i];
 
-	};
+	}
 
 }
 
@@ -150,7 +148,7 @@ function openTab(evt, tabName) {
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  	tabcontent[i].style.display = "none";
   }
 
   // Get all elements with class="tablinks" and remove the class "active"

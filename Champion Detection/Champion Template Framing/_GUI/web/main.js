@@ -1,3 +1,49 @@
+var champions = [];
+//var champions = ['blitzcrank.png', 'braum.png', 'darius.png', 'elise.png', 'fiora.png', 'garen.png', 'graves.png', 'kassadin.png', 'khazix.png', 'lissandra.png', 'lucian.png', 'lulu.png', 'mordekaiser.png', 'nidalee.png', 'pyke.png', 'reksai.png', 'rengar.png', 'tristana.png', 'varus.png', 'vayne.png', 'warwick.png'];
+
+//Made my Kamal
+function toggleChamp(champion) {
+    if((document.getElementById(champion).src == "http://localhost:8000/img/champions/"+champion)) {
+        champions.push(champion);
+        document.getElementById(champion).src = "img/champions/grayscale/gray"+champion;
+
+    } else if((document.getElementById(champion).src == "http://localhost:8000/img/champions/grayscale/gray"+champion)) {
+        champions.splice(champions.indexOf(champion), 1);
+        document.getElementById(champion).src = "img/champions/"+champion;
+
+    }
+
+    console.log("Selected: ", champion);
+    console.log("Currently active: ", champions);
+    sendChampionsToPython(champions);
+
+}
+
+var audio = new Audio('audio/lightsound.mp3');
+
+eel.expose(playSound);
+function playSound(){
+	audio.play();
+	audio.currentTime=0;
+}
+
+//var intervalID = window.setInterval(checkCurrentScreen, 10000);
+eel.expose(sendChampionsToPython);
+function sendChampionsToPython(champions){
+	console.log("sent champions to python");
+	eel.championsReceiver(champions)();
+
+}
+//runCheckScreen(champions);
+
+
+//ITEM SHEET JS
+//ITEM SHEET JS
+//ITEM SHEET JS
+//ITEM SHEET JS
+//ITEM SHEET JS
+//ITEM SHEET JS
+
 var ownedItems = [];
 var possibleItems = [];
 var ownedItemsNumbers = [];
@@ -35,7 +81,7 @@ function updateSheet(item, colour) {
 		for (var i = imageSourceForItem.length - 1; i >= 0; i--) {
 			if(imageSourceForItem[i].src.includes("img/items/grayscale/gray"+item)) {
 				imageSourceForItem[i].src = "img/items/"+item;
-			}
+	        }
 		}
 	}else if (colour === false) {
 		for (var i = imageSourceForItem.length - 1; i >= 0; i--) {
@@ -140,18 +186,24 @@ function addItemToCraftable(possibleItems){
 
 }
 
-function addItemToCraftable(possibleItems){
-	//imageSourceForItem is a list for each slot
-	var imageSourceForItem = document.getElementsByClassName('item');
+//Tab Functionality
+function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
 
-	//Clear the Craftable items table then fill it with possibleitems
-	for (var i = imageSourceForItem.length - 1; i >= 0; i--) {
-		imageSourceForItem[i].innerHTML = "<td class = 'item' style='width: 64px; height: 64px;'></td>";
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+  	tabcontent[i].style.display = "none";
+  }
 
-	}
-	for (var i = possibleItems.length - 1; i >= 0; i--) {
-		imageSourceForItem[i].innerHTML = "<td class = 'item'><div class='tooltip'><img class= '"+possibleItems[i]+"' src='img/items/"+possibleItems[i]+"'><span class='tooltiptext'>"+cheatsheetDictionary[possibleItems[i]]+"</span></div></td>";
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
 
-	}
-
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
