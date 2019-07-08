@@ -7,6 +7,10 @@ If you want to try another set of items, press the Reset Selection button at the
 
 [Download Link](https://github.com/AliMZaini/TFTHelper/blob/master/TFTHelper%20-%20Item%20Cheat%20Sheet/TFTHelper%20-%20Item%20Cheat%20Sheet/dist/TFTHelper%20-%20ItemsSheet.exe) or preferrably, just use this website: https://alimzaini.github.io/TFTHelper/
 
+You can open the website using an Overwolf Browser to make it an overlay on the game so you don't have to tab out: https://www.overwolf.com/app/Overwolf-Browser example of this: https://imgur.com/ZNBxlKI
+
+![OverlayExample](ExampleScreenshots/OverlayExample.gif)
+
 ![itemsheetgifexample](ExampleScreenshots/itemsheetgifexample.gif)
 
 # Win Tracker
