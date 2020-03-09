@@ -1,1 +1,0 @@
-This version doesn't require any Python, just uses HTML/CSS/JS
