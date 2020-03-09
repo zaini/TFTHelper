@@ -5,36 +5,32 @@ TFTHelper - Tools to help with Riot's TFT
 Select the items you have to quickly see the items you could make.
 If you want to try another set of items, press the Reset Selection button at the top.
 
-[Download Link](https://github.com/AliMZaini/TFTHelper/blob/master/TFTHelper%20-%20Item%20Cheat%20Sheet/TFTHelper%20-%20Item%20Cheat%20Sheet/dist/TFTHelper%20-%20ItemsSheet.exe) or preferrably, just use this website: https://alimzaini.github.io/TFTHelper/
+You can use the tool here: https://alimzaini.github.io/TFTHelper/
 
-You can open the website using an Overwolf Browser to make it an overlay on the game so you don't have to tab out: https://www.overwolf.com/app/Overwolf-Browser example of this: https://imgur.com/ZNBxlKI
+You can open the website using an Overwolf Browser to make it an overlay on the game so you don't have to tab out: https://www.overwolf.com/app/Overwolf-Browser
 
 ![OverlayExample](ExampleScreenshots/OverlayExample.gif)
 
-![itemsheetgifexample](ExampleScreenshots/itemsheetgifexample.gif)
+## The following features have been put on hold indefinitely:
 
 # Win Tracker
 Tracks wins, loses and positions for every game and shows your winrate and average position. Requires manual input after every game.
 
 # Champion Notifier
 When a champion you want appears on screen you will be notified by a sound so you don't miss it.
-Works by taking a screenshot of the game and analysing it.
-Still need to add all champions and make it more usable before releasing.
+Works by taking a screenshot of the game and analysing it. You can select which champions you are looking for from the tool.
 
-![ChampNotifierExample](ExampleScreenshots/ChampionNotifier%20Example.png)
-![ChampNotifierExample](ExampleScreenshots/ChampTrackerExample.png)
+![ChampSelection](ExampleScreenshots/ChampSelector.png)
+
+![ChampNotifierExample](ExampleScreenshots/ChampionDetection.png)
 
 # Item Notifier
-This still requires a lot of work, but the intention is to have it track items as they appear and use Machine Learning to help suggest what items you go for and build.
-
-![ItemTrackerExample](ExampleScreenshots/ItemTracker%20Example.png)
-
-There are some plans to add ML features to give suggestions on what to build.
+Similar to the champion notifier but for items. Eventually it will use all the data collected to make suggestions on which items to get and build and on which champions to use them on.
 
 # Extra
 Some quick debugging for common errors:
 
-* OSError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions: ('localhost', 8000) - Means the port is probably unavailable, you don't have administrator access to it. port 8000 might be in use so you'll have to download the python code and edit it. I'll add an explaination later or message me.
+* OSError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions: ('localhost', 8000) - Means the port is probably unavailable, you don't have administrator access to it. port 8000 might be in use so you'll have to download the python code and edit it.
 
 * "Failed to execute script" - People have had different solutions, try running it as administrator and try downloading it from another link such as from the link I provide here or downloading the whole GitHub repo. If you don't have Google Chrome installed, install it here: https://www.google.com/chrome/
 
