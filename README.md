@@ -1,11 +1,11 @@
 # TFTHelper
-TFTHelper - Tools to help with Riot's TFT
+TFTHelper - Tools to help with Riot's TFT [OUTDATED]
 
 # Item Cheat Sheet
 Select the items you have to quickly see the items you could make.
 If you want to try another set of items, press the Reset Selection button at the top.
 
-You can use the tool here: https://alimzaini.github.io/TFTHelper/
+You can use the tool here: https://zaini.github.io/TFTHelper/
 
 You can open the website using an Overwolf Browser to make it an overlay on the game so you don't have to tab out: https://www.overwolf.com/app/Overwolf-Browser
 
